@@ -4,13 +4,109 @@
 }
 
 @font-face {
-    font-family: "Outline";
-    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format("typetext");
+    font-family: "Outfit";
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format(truetype);
     font-style: normal;
 }
 
 @font-face {
     font-family: "YoungSerif";
-    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf) format("typetext");
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf) format(truetype);
     font-style: normal;
+}
+
+body {
+    background-color: rgb(252, 239, 225);
+    color:rgb(41, 40, 40)
+}
+
+h1,
+h2 {
+    font-family: "YoungSerif";
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: lighter;
+}
+
+p,
+li,
+td {
+    font-family: "Outfit";
+    font-size: 11px;
+}
+
+li {
+    list-style-position: inside;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+td,
+.instructions,
+.ingredients {
+    border-bottom: solid 1px rgb(247, 247, 247);
+    padding: 10px;
+}
+
+h2 {
+    color: rgb(158, 98, 30);
+}
+
+ol li::marker, ul li::marker {
+    color: rgb(158, 98, 30);
+    font-weight: bolder;
+}
+
+ol li {
+    margin-left: 12px;
+    margin-bottom: 5px;
+    list-style-position: outside;
+    padding: 10px;
+}
+
+.recipe-card {
+    margin: 100px auto 150px;
+    width: 500px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.recipe-img {
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.prep {
+    background-color: rgb(253, 245, 246);
+    border-radius: 12px;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.prep li {
+    margin-left: 25px;
+}
+
+.prep ul li::marker {
+    color: rgb(112, 36, 100);
+}
+
+.prep h2 {
+    font-size: 15px;
+    font-family: "Outfit";
+    font-weight: bolder;
+    margin: 10px 0 10px 10px;
+    color: rgb(112, 36, 100);
+}
+
+.amount {
+    color: rgb(158, 98, 30);
+    font-weight: bolder;
 }
